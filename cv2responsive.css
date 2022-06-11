@@ -1,0 +1,192 @@
+@media all and (max-width:1000px){
+
+    .container1 .image img{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 70px;
+        left: 512px
+    }
+
+    .container2 .skills >h1{
+        font-size: 40px;
+    }
+
+    .container2 .skills .skill img{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        left: -84px;
+    }   
+
+    .container2 .skills .skill > p{
+        position: relative;
+        left: -156px;
+    }
+
+    .container2 .exp > h3{
+        font-size: 30px;
+    }
+
+    .container2 .exp .partime h4{
+        font-size: 20px;
+    }
+
+    .container2 .exp .partime .desc{
+        font-size: 15px;
+    }
+
+    .container4 {
+        height: 100em;
+    }
+
+    .container4 .maps iframe{
+        width: 90vw;
+        position: relative;
+        top: 655px;
+        left: -239px;
+    
+    }
+
+    .container4 .form {
+        position: relative;
+        left: 400px;
+    }
+
+}
+
+    
+@media all and (max-width:670px){
+    .container1  .judul,
+    .container1 .judul-dev{
+        font-size: 30px;
+        position: relative;
+        top: 280px;
+    }
+    .container1  .judul{
+        top: 250px;
+    }
+    .container1 .image img{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        left: 137px;
+        top: -22px;
+    }
+
+    .container1 .desc{
+        position: relative;
+        top: 250px;
+    }
+
+    .container1 .desc .downloadcv{
+        width: 100%;
+        top: 45px;
+    }
+
+    .container2 .skills > h1{
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .container2 .exp > h3{
+        font-size: 30px;
+    } 
+
+    .container2 .exp{
+        width: 50%;
+        position: relative;
+        right: -55px;
+    }
+
+    .container2 .skills .skill h3 {
+        font-size: 20px;
+    } 
+
+    .container2 .skills .skill img{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: -60px;
+    }
+    .container2 .skills .skill .icon2{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        left: -60px;
+    }
+
+    .container2 .skills .skill p{
+        position: relative;
+        left: -115px;
+    }
+
+    .container2 .exp .partime h4{
+        font-size: 20px;
+    }
+    .container2 .exp .partime .desc{
+        font-size: 15px;
+    }
+
+    .container3 > h3{
+        font-size: 30px;
+    }
+
+    .container3 .edutes .edu1{
+        position: relative;
+        top:-70px;
+        width: 800px;
+        margin-right: -50px;
+    }
+    .container3 .edutes .edu1 > h3{
+        font-size: 20px;
+    }
+
+    .container3 .edutes .edu2{
+        position: relative;
+        top:-120px;
+        width: 800px;
+        margin-right: -50px;
+    }
+    .container3 .edutes .edu2 h3{
+        font-size: 20px;
+    }
+    .container3 .edutes .edu3{
+        position: relative;
+        top:-150px;
+        width: 800px;
+
+    }
+    .container3 .edutes .edu3 h3{
+        font-size: 20px;
+    }
+
+    .container4 {
+        height: 100em;
+    }
+    .container4 > h3{
+        font-size: 30px;
+    }
+
+    .container4 .maps iframe{
+        width: 100vw;
+        position: relative;
+        top: 800px;
+        left: -254px;
+    }
+
+    .container4 .form-wrapper .form {
+        width: 100%;
+        position: relative;
+        left: 320px;
+
+    }
+
+    .container4 .form-wrapper .form label{
+        position: relative;
+
+        
+    }
+}
+
+    

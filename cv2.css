@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*container1 nav, judul, nav, img, about*/
+.container1{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #ff5500;
+}
+
+.container1 .nav{
+    display: flex;
+    flex-direction:row-reverse;
+    position: relative;
+    z-index: 9999;
+}
+
+.container1 .nav a{
+    text-decoration: none;
+    margin: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.container1 .nav a:hover{
+    color: black;
+    
+}
+
+.container1 .judul{
+    margin-top: 80px;
+}
+
+.container1 h1{
+    font-size: 100px;
+    color: white;
+    margin: 0 100px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+
+}
+.container1 > .judul-dev{
+    margin-top: -50px;
+    color: black;
+}
+.container1 .desc {
+    width: 50%;
+    margin: 30px 100px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.container1 .desc > p{
+    text-indent: 30px;
+}
+
+.container1 .desc a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    position: relative;
+    left: 120px;
+}
+.container1 .desc span{
+    margin-top: 30px;
+}
+
+.container1 .desc a:hover{
+    color: white;
+}
+
+.container1 .desc > .downloadcv{
+    padding: 10px 20px;
+    background-color: rgb(168, 247, 168);
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 80px;
+    left: -35px;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.container1 .desc > .downloadcv:active{
+    top: 85px;
+    box-shadow: none;
+}
+.container1 .image img{
+    -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik00MCwtMzIuOUM1NS45LC0yNC4xLDc1LjUsLTEyLjEsNzYuNiwxLjFDNzcuOCwxNC4zLDYwLjQsMjguNyw0NC41LDQzLjhDMjguNyw1OSwxNC4zLDc1LC00LjMsNzkuM0MtMjIuOSw4My42LC00NS44LDc2LjIsLTU3LjMsNjFDLTY4LjcsNDUuOCwtNjguNywyMi45LC02OCwwLjdDLTY3LjQsLTIxLjYsLTY2LjEsLTQzLjIsLTU0LjcsLTUyQy00My4yLC02MC44LC0yMS42LC01Ni44LC00LjgsLTUyQzEyLjEsLTQ3LjIsMjQuMSwtNDEuNyw0MCwtMzIuOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIiAvPgo8L3N2Zz4K);
+    -webkit-mask-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.container1 .image img{
+    width: 700px;
+    height: 700px;
+    
+}
+/*container1 nav, judul, nav, img, about*/
+
+/*container2 skill, exp*/
+.container2 {
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+}
+
+.container2 .skills {
+    width: 30%;
+
+}
+
+.container2 .skills >h1{
+    width: 50%;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container2 .exp,
+.container2 .skills{ 
+    margin-top: 80px;
+}
+
+.container2 .skills > p{
+    margin-top: 30px;
+    text-indent: 30px;
+}
+
+.container2 .skills .skill{
+    display: flex;
+}
+
+.container2 .skills .skill h3{
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.container2 .skills .skill img{
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top:80px;
+}
+
+.container2 .skills .skill .icon2{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+.container2 .skills .skill p{
+    position: relative;
+    display: inherit;
+    top: 220px;
+    left: -70px;
+}
+
+.container2 .exp > h3{
+    width: 50%;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container2 .exp .partime{
+    margin-top: 50px;
+    border-top: 3px solid black;
+    padding: 30px;
+}
+
+.container2 .exp .partime .desc{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container2 .exp .partime h4{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*container2 skill, exp*/
+
+/*container3 education*/
+.container3 {
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #ffd426;
+}
+
+.container3 > h3{
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 50px;
+    margin-bottom: 80px;
+}
+
+.container3 .edutes{
+    display: flex;
+    gap: 3em;
+}
+
+.container3 .edu1, .edu2, .edu3{
+    width: 50%;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+
+.container3 .edutes .edu1{
+    position: relative;
+    top: 80px;
+    padding: 30px;
+}
+.container3 .edutes .edu2 {
+    padding: 30px;
+}
+.container3 .edutes .edu3{
+    position: relative;
+    top:-100px;
+    padding: 30px;
+}
+.container3 .edutes h3{
+    font-size: 30px;
+    font-family:'Roboto', sans-serif;
+}
+.container3 .edutes .edu1 h3{
+    font-size: 28px;
+    font-family:'Roboto', sans-serif;
+}
+.container3 .edutes .tanggal{
+    font-size: 15px;
+    font-family:'Roboto', sans-serif;
+    padding: 10px 0;
+}
+
+/*container3 education*/
+
+/*container4 form*/
+.container4 {
+    max-width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.container4 .form-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -50px;
+}
+
+.container4  > h3{
+    font-size: 60px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 80px 50px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: 50%;
+}
+
+.container4 .form-wrapper .form input{
+    width: 100%;
+    height: 10%;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #2ecc71;
+    font-size: 20px;
+}
+
+.container4 .form-wrapper .form label{
+    position: relative;
+    top: -35px;
+    left: 20px;
+    transition: 0.3s;
+}
+
+.container4 .form-wrapper .form .name:focus ~ .name-label{
+    top: -65px;
+    background-color: whitesmoke;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.container4 .form-wrapper .form .name:not(:placeholder-shown) ~ .name-label,
+.container4 .form-wrapper .form .email:not(:placeholder-shown) ~ .email-label,
+.container4 .form-wrapper .form .number:not(:placeholder-shown) ~ .number-label{ 
+    top: -65px;
+    background-color: whitesmoke;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.container4 .form-wrapper .form .email:focus ~ .email-label{
+    top: -65px;
+    background-color: whitesmoke;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.container4 .form-wrapper .form .number:focus ~ .number-label{
+    top: -65px;
+    background-color: whitesmoke;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.container4 .form-wrapper .form button{
+    padding: 10px 20px;
+    background-color: rgb(168, 247, 168);
+    border: none;
+    position: relative;
+    right: -120px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold   ;
+
+}
+
+.container4 .form-wrapper .form button:active{
+    box-shadow: none;
+    top: 5px;
+}
+
+.container4 .maps {
+    position: relative;
+    top: -170px;
+    right: -50px;
+}
+
+.container4 .maps iframe{
+    width: 50em;
+    height: 35em;
+}
+/*container4 form*/
+
+/*container5 footer*/
+
+.container5{
+    max-width: 100vw;
+    height: 30%;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 50px;
+}
+
+.container5 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+}
+/*container5 footer*/
