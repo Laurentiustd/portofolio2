@@ -40,11 +40,11 @@
         height: 100em;
     }
 
-    .container4 .maps iframe{
+    .container4 .maps{
         width: 90vw;
         position: relative;
         top: 655px;
-        left: -239px;
+        left: -200px;
     
     }
 
@@ -58,25 +58,49 @@
     
 @media all and (max-width:670px){
     .container1  .judul,
-    .container1 .judul-dev{
+    .container1 .judul-dev,
+    .container1 > #text{
         font-size: 30px;
         position: relative;
-        top: 280px;
+        top: 100px;
     }
     .container1  .judul{
         top: 250px;
     }
+
+    .container1 .nav{
+        background-color: lightgray;
+        flex-direction: column-reverse;
+        position: relative;
+        top: 100px;
+        width: fit-content;
+        opacity: 1;
+        border-radius: 3px;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+
+    .container1 .nav.slide{
+        transform: translateX(0);
+    }
+
+    .container1 .nav-toogle{
+        opacity: 1;
+        top: -300px;
+        position: relative;
+    }
+
     .container1 .image img{
         width: 500px;
         height: 500px;
         position: absolute;
         left: 137px;
-        top: -22px;
+        top: -80px;
     }
 
     .container1 .desc{
         position: relative;
-        top: 250px;
+        top: 150px;
     }
 
     .container1 .desc .downloadcv{
@@ -168,11 +192,16 @@
         font-size: 30px;
     }
 
-    .container4 .maps iframe{
+    .container4 .maps{
         width: 100vw;
         position: relative;
-        top: 800px;
-        left: -254px;
+        top: 500px;
+        left: -200px;
+    }
+
+    .container4 .maps iframe{
+        width: 100vw;
+        height: 500px;
     }
 
     .container4 .form-wrapper .form {
@@ -187,6 +216,117 @@
 
         
     }
+}
+
+@media all and (max-width:420px){
+
+    .container1 .nav a{
+        font-size: 1em;
+    }
+
+    .container1 .image img{
+        left: -2px;
+        width: 100%;
+        height: 50%;
+        top: 21px;
+    }
+
+    .container1 .desc{
+        top: 150px;
+    }
+    
+    .container1 > #text{
+        top: 100px;
+        left: 40px;
+    }
+
+    .container1 .desc .downloadcv,
+    .container1 .desc a{
+        left: 8px;
+    }
+
+    .container1 .desc .downloadcv{
+        top: 20px;
+    }
+
+    .container2 .skills > h1{
+        font-size: 2em;
+    }
+
+    .container2 .skills .skill {
+        margin-top: 64px;
+    }
+    .container2 .skills .skill> p{
+        width: 150%;
+        
+    }
+
+    .container2 .skills .skill > h3{
+        font-size: 1.5em;
+    }
+
+    .container2 .skills .skill img{
+        width: 45%;
+        margin-left: -15px
+    }
+
+    .container2 .skills .skill .icon2{
+        width: 60%;
+        height: 50%;
+    }
+
+    .container2 .skills .skill p{
+        left: -110px;
+        top: 200px;
+    }
+
+    .container2 .skills .exp > h3{
+        font-size: 1.5em;
+        width: fit-content;
+    }
+
+    .container2 .exp{
+       left: 30px;
+    }
+
+    .container2 .exp .partime .tanggal{
+        font-size: .9em;
+    }
+
+    .container2 .exp .partime h4{
+        font-size: 1.2em;
+    }
+
+    .container3 {
+        height: 80em;
+    }
+
+    .container3 .edutes {
+        flex-wrap: wrap;
+    }
+    
+    .container3 .edutes .edu1,
+    .container3 .edutes .edu2,
+    .container3 .edutes .edu3{
+        width: 95vw;
+        margin-top: 80px;
+    }
+    .container4 .form-wrapper .form {
+        width: 100%;
+        position: relative;
+        left: 200px;
+    }
+
+    .container4 .maps{
+        left: -190px;
+    }
+
+    .container4 .maps iframe{
+        width: 100vw;
+
+    }
+
+    
 }
 
     

@@ -4,11 +4,17 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+body{
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 /*container1 nav, judul, nav, img, about*/
 .container1{
     max-width: 100vw;
     height: 100vh;
-    background-color: #ff5500;
+    background-color: whitesmoke;
 }
 
 .container1 .nav{
@@ -23,7 +29,7 @@
     margin: 30px 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: white;
+    color: #6E57E0;
     font-weight: bold;
 }
 
@@ -32,26 +38,69 @@
     
 }
 
+.container1 .nav-toogle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    opacity: 0;
+    position: relative;
+}
+
+.container1 .nav-toogle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    top: 30px;
+    position: relative;
+}
+
+.container1 .nav-toogle input{
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    opacity: 0;
+}
 .container1 .judul{
     margin-top: 80px;
 }
 
 .container1 h1{
     font-size: 100px;
-    color: white;
+    color: #121212;
     margin: 0 100px;
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
+    
+}
+#text{
+    margin-top: -50px;
+    color: #545454fa;
+    position: relative;
+    top: 90px;
+    margin-bottom: -200px;
+    font-size: 100px;
+    font-family: 'Kanit', sans-serif;
+    left: 100px;
+    width: fit-content;
+}
 
+.container1.dark #text{
+    color: white;
 }
 .container1 > .judul-dev{
     margin-top: -50px;
-    color: black;
+    color: #545454fa;
 }
 .container1 .desc {
     width: 50%;
+    color: #3a3a3a;
     margin: 30px 100px;
-    color: white;
     font-size: 15px;
     font-weight: bold;
     font-family: arial;
@@ -73,13 +122,17 @@
 }
 
 .container1 .desc a:hover{
-    color: white;
+    color: #6E57E0;
+}
+
+.container1 .desc > .downloadcv:hover{
+    color: black;
 }
 
 .container1 .desc > .downloadcv{
     padding: 10px 20px;
-    background-color: rgb(168, 247, 168);
-    color: black;
+    background-color: #6E57E0;
+    color: white;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
@@ -107,6 +160,56 @@
     height: 700px;
     
 }
+
+.container1 .toogle-theme .label{
+    background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: fixed;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+    z-index: 999;
+    left: 10px;
+}
+
+.label .ball {
+    background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox {
+    opacity: 0;
+	position: fixed;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon-o {
+    color: #f1c40f;
+    font-size: 20px;
+}
+
+.fa-sun-o {
+	color: #f39c12;
+}
+
+
+
+
 /*container1 nav, judul, nav, img, about*/
 
 /*container2 skill, exp*/
@@ -198,7 +301,7 @@
 .container3 {
     max-width: 100vw;
     height: 100vh;
-    background-color: #ffd426;
+    background-color: #f7f7f7;
 }
 
 .container3 > h3{
@@ -253,6 +356,10 @@
     max-width: 100vw;
     height: 100vh;
     background-color: whitesmoke;
+}
+
+.container4 h3 > span{
+    color: #6E57E0;
 }
 
 .container4 .form-wrapper{
@@ -327,7 +434,7 @@
     box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
     border: 1px solid black;
     border-radius: 10px;
-    font-weight: bold   ;
+    font-weight: bold;
 
 }
 
@@ -340,6 +447,7 @@
     position: relative;
     top: -170px;
     right: -50px;
+    width: fit-content;
 }
 
 .container4 .maps iframe{
@@ -363,3 +471,79 @@
     font-size: 8px;
 }
 /*container5 footer*/
+
+/* dark theme */
+.container1.dark, .container2.dark,
+.container3.dark, .container4.dark, .container5.dark{
+    background-color: #292C35;
+    transition: .5s;
+    
+}
+
+
+
+.container1.dark .nav a, .container1.dark .desc, 
+.container1.dark .judul, .container1.dark .desc a, 
+.container3.dark, .container2.dark,
+.container4.dark, .container5.dark{
+    color: white;
+}
+
+.container1.dark .nav-toogle span{
+    background-color: white;
+}
+
+.container1.dark .nav.slide{
+    background-color: rgb(43, 43, 43);
+}
+
+.container1.dark .desc a:hover,
+.container1.dark .nav a:hover{
+    color: crimson;
+}
+
+.container1.dark .desc .downloadcv:hover{
+    color: yellow;
+}
+
+.container2.dark .exp .partime{
+    border-top: 3px solid white;
+}
+
+.container3.dark .edutes .edu1, .container3.dark .edutes .edu2, 
+.container3.dark .edutes .edu3{
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+}
+
+.container4.dark .form-wrapper .form .name:focus ~ .name-label,
+.container4.dark .form-wrapper .form .email:focus ~ .email-label,
+.container4.dark .form-wrapper .form .number:focus ~ .number-label
+{
+    background-color: #292C35;
+}
+
+.container4.dark .form-wrapper .form .name:not(:placeholder-shown) ~ .name-label,
+.container4.dark .form-wrapper .form .email:not(:placeholder-shown) ~ .email-label,
+.container4.dark .form-wrapper .form .number:not(:placeholder-shown) ~ .number-label{ 
+    background-color: #292C35;
+
+}
+
+.container4.dark .form-wrapper .form input {
+    color: white;
+}
+
+/* dark theme */
+
+.reveal{
+    position: relative;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}

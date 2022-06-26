@@ -30,8 +30,15 @@
             <a href="#skillexp">Skills & Experience</a>
             <a href="#home">Home</a>
         </div>
-        <h1 class="judul">FrontEnd</h1>
-        <h1 class="judul-dev">Developer</h1>
+        <div class="nav-toogle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="text"></div>
+        <h1 class="judul" style="opacity: 0;">FrontEnd</h1>
+        <h1 class="judul-dev" style="opacity: 0;">Developer</h1>
         <div class="desc">
             <p>Hi, My Name is Laurentius Taruna Djaja, and curently im a undergraduate information system student, i have skills in networking and front end dev, feel free to contact me or ask me anything!</p>
             <a href="https://www.instagram.com/laurent.tius" target="_blank">
@@ -54,8 +61,16 @@
         <div class="image">
             <img src="pp.jpeg" alt="pp">
         </div>
+        <div class="toogle-theme">
+            <input type="checkbox" class="checkbox" id="chk" onclick="toogleDark(); toogleDark1(); toogleDark2(); toogleDark3(); toogleDark4();" />
+	        <label class="label" for="chk">
+                <i class="fa fa-moon-o"></i>
+                <i class="fa fa-sun-o"></i>
+		        <div class="ball"></div>
+	        </label>
+        </div>
     </div>
-    <div class="container2" id="skillexp">
+    <div class="container2 reveal" id="skillexp">
         <div class="skills">
             <h1>Skills & Experience</h1>
             <p>a specialist front-end dev. Passionate about web developer, and expert in network engineering. Had some experience in professional jobs.  
@@ -84,7 +99,7 @@
             </div>
         </div>
     </div>
-    <div class="container3" id="edu">
+    <div class="container3 reveal" id="edu">
         <h3>Education</h3>
         <div class="edutes">
             <div class="edu1">
@@ -109,8 +124,8 @@
         </div>
     </div>
 
-    <div class="container4" id="contact">
-        <h3>Let's Discuss Our Project!</h3>
+    <div class="container4 reveal" id="contact">
+        <h3>Let's Discuss <span>Our</span> Project!</h3>
         <div class="form-wrapper">
             <div class="form">
                 <input type="text" class="name" id="name" placeholder=" ">
@@ -120,7 +135,7 @@
                 <input type="text" id="number" class="number" placeholder=" ">
                 <label for="email" class="number-label">Enter your number</label><br>
                 <textarea name="text1" id="text1" cols="50" rows="10"></textarea><br>
-                <button>Send</button>
+                <button type="submit" id="sendButton">Send</button>
             </div>
             <div class="maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.148815693849!2d106.73831411474931!3d-6.11065736163049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1d3b84b00633%3A0x5f38da2cb7c6ed03!2sHolywings%20PIK!5e0!3m2!1sid!2sid!4v1654360311031!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -132,5 +147,6 @@
         <p>Copyright 5 Juni 2022, Laurentius Taruna Djaja</p>
         <p>Inspired by Tanim Khan in dribble.com & WebKitCoding in youtube.com</p>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
